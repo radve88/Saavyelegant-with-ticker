@@ -44,3 +44,16 @@ function scrollToSection(event, sectionId) {
         });
     }
 }
+async function fetchNews() {
+    try {
+        const response = await fetch("https://raw.githubusercontent.com/YOUR_GITHUB_USER/YOUR_REPO/main/news.txt");
+        const text = await response.text();
+        const messages = text.split("\n").filter(line => line.trim() !== "").join(" • ");
+
+        document.getElementById("news-content").textContent = messages || "Watch out for the latest stocks and promotions";
+    } catch (error) {
+        console.error("Error fetching news:", error);
+    }
+}
+
+fetchNews();
