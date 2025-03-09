@@ -192,5 +192,45 @@ button:hover {
     }
 }
 
+/* Ticker Container */
+.ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 100%;
+    box-sizing: content-box;
+}
 
+/* Ticker Content */
+.ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    animation: ticker 30s linear infinite;
+}
+
+/* Ticker Items */
+.ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: red;
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
  
