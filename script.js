@@ -46,17 +46,18 @@ function scrollToSection(event, sectionId) {
 }
 async function fetchNews() {
     try {
-        const response = await fetch("https://github.com/radve88/Saavyelegant-with-ticker/blob/master/fonts/news.txt");
+        const response = await fetch("https://raw.githubusercontent.com/radve88/Saavyelegant-with-ticker/master/fonts/news.txt");
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const text = await response.text();
         const messages = text.split("\n").filter(line => line.trim() !== "");
 
         if (messages.length > 0) {
-            let tickerHTML = "";
-            messages.forEach(msg => {
-                tickerHTML += `<div class="ticker__item">${msg}</div>`;
-            });
-
+            let tickerHTML = messages.map(msg => `<div class="ticker__item">${msg}</div>`).join("");
             document.getElementById("news-content").innerHTML = tickerHTML;
+        } else {
+            document.getElementById("news-content").innerHTML = `<div class="ticker__item">Watch out for the latest stocks and promotions</div>`;
         }
     } catch (error) {
         console.error("Error fetching news:", error);
