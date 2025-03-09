@@ -193,16 +193,15 @@ button:hover {
 }
 
 .ticker-wrap {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     overflow: hidden;
-    height: 4rem;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: #d4a5a5;
     color: white;
     padding: 10px 0;
+    font-weight: bold;
     text-align: center;
-    z-index: 1000;
+    position: relative;
+    z-index: 10;
 }
 
 .ticker {
