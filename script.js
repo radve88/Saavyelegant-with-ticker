@@ -46,7 +46,7 @@ function scrollToSection(event, sectionId) {
 }
 async function fetchNews() {
     try {
-        const response = await fetch("https://raw.githubusercontent.com/radve88/Saavyelegant-with-ticker/master/fonts/news.txt");
+        const response = await fetch("https://github.com/radve88/Saavyelegant-with-ticker/blob/master/fonts/news.txt");
         const text = await response.text();
         const messages = text.split("\n").filter(line => line.trim() !== "");
 
