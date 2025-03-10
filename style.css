@@ -192,25 +192,20 @@ button:hover {
     }
 }
 
-.ticker-wrap {
-    width: 100%;
-    overflow: hidden;
-    background: #d4a5a5;
-    color: white;
-    padding: 10px 0;
+/* Make ticker text red */
+.ticker__item {
+    color: red;
     font-weight: bold;
-    text-align: center;
-    position: relative;
-    z-index: 10;
+    font-size: 1.5rem;
 }
 
-.ticker {
-    display: inline-block;
-    white-space: nowrap;
-    animation: ticker-scroll 15s linear infinite;
+/* Flashing effect */
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-@keyframes ticker-scroll {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
+.ticker__item {
+    animation: flash 1s infinite;
 }
