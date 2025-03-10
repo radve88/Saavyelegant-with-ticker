@@ -66,16 +66,3 @@ async function fetchNews() {
 
 fetchNews();
 
-document.getElementById("promo-button").addEventListener("click", function() {
-    showFlashMessage("🔥 Limited Time Offer: Buy 1 Get 1 Free! 🔥");
-});
-
-function showFlashMessage(message) {
-    let flashMsg = document.getElementById('flash-message');
-    flashMsg.innerHTML = `<p>${message}</p>`; // Preserve structure
-    flashMsg.classList.remove('hide');
-    
-    setTimeout(() => {
-        flashMsg.classList.add('hide');
-    }, 3000); // Hide after 3 seconds
-}
