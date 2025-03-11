@@ -1,5 +1,8 @@
 <h2> Announcements </h2>
-<blink><b>During festivals holidays and occasions we give various kinds of discounts and deals look out for them here.</b>
-<b>ANNOUNCEMENT We have fresh stock for cottons for summer Jaipuri kurties and fabulous cotton dresses </b></blink>
+<marquee>
+     <b>During festivals holidays and occasions we give various kinds of discounts and deals look out for them here.</b>
+<b>ANNOUNCEMENT We have fresh stock for cottons for summer Jaipuri kurties and fabulous cotton dresses </b>
+
+</marquee>
 
 
