@@ -196,7 +196,7 @@ button:hover {
 .#news-ticker {
     color: red !important; /* Forces red text */
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     animation: flash 1s step-start infinite;
 }
 
