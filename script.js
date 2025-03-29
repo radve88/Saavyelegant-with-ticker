@@ -66,3 +66,17 @@ async function fetchNews() {
 
 fetchNews();
 
+function openZoom(img) {
+    let overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+    overlay.style.display = "block";
+
+    img.classList.add("zoomed");
+
+    overlay.onclick = function() {
+        img.classList.remove("zoomed");
+        document.body.removeChild(overlay);
+    };
+}
+
