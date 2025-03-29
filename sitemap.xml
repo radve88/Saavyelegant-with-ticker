@@ -1,0 +1,11 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://netify.saavy-boutique.app/</loc>
+        <lastmod>2025-03-28</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://netify.saavy-boutique.app/collections</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>
