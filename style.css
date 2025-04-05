@@ -205,12 +205,9 @@ button:hover {
 }
 
 .collection-logo {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.collection-logo img {
-  max-width: 120px; /* Adjust size as needed */
-  height: auto;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 300px; /* optional: limit how large it gets */
+  padding-bottom: 1rem;
 }
