@@ -204,10 +204,4 @@ button:hover {
     50% { opacity: 0; }
 }
 
-.collection-logo {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  max-width: 300px; /* optional: limit how large it gets */
-  padding-bottom: 1rem;
-}
+
