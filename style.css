@@ -1,4 +1,4 @@
-/* General Styling */
+ /* General Styling */
 body {
     font-family: 'Playfair Display', serif;
     background: #f5ecec;
@@ -204,4 +204,26 @@ button:hover {
     50% { opacity: 0; }
 }
 
+body {
+  background-image: url('images/saavy-watermark.png'); /* adjust the path if needed */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px auto; /* tweak size as needed */
+  opacity: 1; /* full visibility of body */
+}
 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/saavy-watermark.png'); /* same image */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px auto;
+  opacity: 0.05; /* controls watermark fade */
+  pointer-events: none;
+  z-index: 0;
+}
